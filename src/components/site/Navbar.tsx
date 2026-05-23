@@ -26,7 +26,7 @@ export function Navbar() {
   return (
     <header className="fixed top-0 inset-x-0 z-50">
       {/* Compliance ribbon — warm marquee-style band */}
-      <div className="hidden sm:block bg-ink text-white/90 text-[11px] sm:text-xs">
+      <div className="hidden md:block bg-ink text-white/90 text-[11px] sm:text-xs">
         <div className="mx-auto max-w-7xl px-4 py-2 flex items-center justify-center gap-3 text-center">
           <span className="inline-block h-1 w-6 rounded-full bg-primary-glow shrink-0" />
           <span className="leading-tight tracking-wide">
