@@ -112,7 +112,8 @@ function HomePage() {
       {/* ====== HERO BENTO ====== */}
       <section className="relative pt-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="grid lg:grid-cols-12 gap-4 lg:gap-5">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-warm border border-border p-8 sm:p-14 lg:p-20">
+            <div className="grid lg:grid-cols-12 gap-4 lg:gap-5">
             {/* Headline block */}
             <div className="lg:col-span-8 bento bento-sand p-8 sm:p-12 lg:p-16 min-h-[460px] flex flex-col justify-between">
               <Reveal>
@@ -199,7 +200,6 @@ function HomePage() {
                 <p className="mt-2 text-sm text-white/85 leading-relaxed">We never ask for provider passwords, PINs or banking details — not now, not ever.</p>
               </div>
             </div>
-          </div>
 
           {/* Disclosure ribbon */}
           <Reveal>
@@ -210,6 +210,8 @@ function HomePage() {
               </p>
             </div>
           </Reveal>
+            </div>
+          </div>
         </div>
       </section>
 
