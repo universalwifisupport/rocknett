@@ -110,7 +110,7 @@ function HomePage() {
   return (
     <SiteLayout>
       {/* ====== HERO BENTO ====== */}
-      <section className="relative">
+      <section className="relative pt-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid lg:grid-cols-12 gap-4 lg:gap-5">
             {/* Headline block */}
