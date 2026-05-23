@@ -10,11 +10,36 @@ export const Route = createFileRoute("/contact")({
     meta: [
       { title: "Contact Rocknet — Call xxx-xxx-xxxx" },
       { name: "description", content: "Get in touch with Rocknet. Send a message, request a callback, or call xxx-xxx-xxxx for service inquiries." },
+      { name: "keywords", content: "contact Rocknet, customer service, support, callback, internet support" },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Contact Rocknet" },
       { property: "og:description", content: "Contact Rocknet for high-speed internet and cable services — call, message or request a callback." },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://rocknett.com/contact" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Contact Rocknet" },
+      { name: "twitter:description", content: "Get in touch with Rocknet customer service." },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [
+      { rel: "canonical", href: "https://rocknett.com/contact" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        textContent: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Rocknet",
+          "url": "https://rocknett.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "telephone": "xxx-xxx-xxxx",
+            "email": "support@rocknett.com"
+          }
+        }),
+      },
+    ],
   }),
   component: ContactPage,
 });

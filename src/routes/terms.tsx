@@ -8,10 +8,17 @@ export const Route = createFileRoute("/terms")({
     meta: [
       { title: "Terms & Conditions | Rocknet" },
       { name: "description", content: "Terms of service governing the use of Rocknet internet, cable, and related services." },
+      { name: "keywords", content: "terms of service, terms and conditions, service agreement, legal" },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Terms & Conditions — Rocknet" },
-      { property: "og:url", content: "/terms" },
+      { property: "og:url", content: "https://rocknett.com/terms" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Terms & Conditions — Rocknet" },
     ],
-    links: [{ rel: "canonical", href: "/terms" }],
+    links: [
+      { rel: "canonical", href: "https://rocknett.com/terms" },
+    ],
   }),
   component: TermsPage,
 });

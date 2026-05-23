@@ -15,11 +15,33 @@ export const Route = createFileRoute("/services")({
     meta: [
       { title: "Internet & Cable Services — Rocknet" },
       { name: "description", content: "Get high-speed cable internet, TV, Wi-Fi, and streaming services from Rocknet. Professional installation, 24/7 support, nationwide coverage." },
+      { name: "keywords", content: "cable internet services, high-speed internet, cable TV, Wi-Fi installation, streaming services, ISP" },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Rocknet — Internet & Cable Services" },
       { property: "og:description", content: "Authorized third-party ISP offering cable internet, TV, and streaming services." },
-      { property: "og:url", content: "/services" },
+      { property: "og:url", content: "https://rocknett.com/services" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://rocknett.com/lifestyle-wfh.jpg" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Rocknet — Internet & Cable Services" },
+      { name: "twitter:description", content: "High-speed internet, cable TV, and streaming from an authorized ISP." },
+      { name: "twitter:image", content: "https://rocknett.com/lifestyle-wfh.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [
+      { rel: "canonical", href: "https://rocknett.com/services" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        textContent: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Rocknet Services",
+          "description": "High-speed cable internet, TV, Wi-Fi, and streaming services",
+          "url": "https://rocknett.com/services"
+        }),
+      },
+    ],
   }),
   component: ServicesPage,
 });

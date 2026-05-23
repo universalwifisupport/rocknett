@@ -5,6 +5,13 @@ import { getRouter } from "./router";
 
 import "./styles.css";
 
+// Handle SPA routing on GitHub Pages
+const redirect = sessionStorage.redirect;
+if (redirect) {
+  delete sessionStorage.redirect;
+  window.history.replaceState(null, "", redirect);
+}
+
 const router = getRouter();
 
 const rootElement = document.getElementById("app")!;

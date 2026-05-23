@@ -19,11 +19,43 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Rocknet — High-Speed Cable Internet & Services" },
       { name: "description", content: "Get reliable high-speed cable internet, TV, and streaming services from Rocknet, an authorized third-party ISP dealer. Professional installation, 24/7 support, nationwide coverage. Call xxx-xxx-xxxx." },
+      { name: "keywords", content: "cable internet, high-speed internet, ISP, streaming services, cable TV, Wi-Fi installation" },
+      { name: "robots", content: "index, follow" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       { property: "og:title", content: "Rocknet — High-Speed Internet & Cable TV Services" },
       { property: "og:description", content: "Authorized third-party Internet Service Provider offering high-speed cable internet, TV, and streaming services." },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://rocknett.com/" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://rocknett.com/hero-family.jpg" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Rocknet — High-Speed Internet & Cable TV Services" },
+      { name: "twitter:description", content: "Authorized third-party Internet Service Provider offering high-speed cable internet, TV, and streaming services." },
+      { name: "twitter:image", content: "https://rocknett.com/hero-family.jpg" },
+      { name: "theme-color", content: "#000000" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [
+      { rel: "canonical", href: "https://rocknett.com/" },
+      { rel: "icon", href: "/favicon.ico" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        textContent: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Rocknet",
+          "url": "https://rocknett.com",
+          "logo": "https://rocknett.com/logo.png",
+          "description": "Authorized third-party Internet Service Provider offering high-speed cable internet, TV, and streaming services.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "telephone": "xxx-xxx-xxxx",
+            "email": "support@rocknett.com"
+          }
+        }),
+      },
+    ],
   }),
   component: HomePage,
 });

@@ -8,10 +8,17 @@ export const Route = createFileRoute("/privacy")({
     meta: [
       { title: "Privacy Policy | Rocknet" },
       { name: "description", content: "How Rocknet collects, uses and protects your personal information." },
+      { name: "keywords", content: "privacy policy, data protection, GDPR, user privacy" },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Privacy Policy — Rocknet" },
-      { property: "og:url", content: "/privacy" },
+      { property: "og:url", content: "https://rocknett.com/privacy" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Privacy Policy — Rocknet" },
     ],
-    links: [{ rel: "canonical", href: "/privacy" }],
+    links: [
+      { rel: "canonical", href: "https://rocknett.com/privacy" },
+    ],
   }),
   component: PrivacyPage,
 });

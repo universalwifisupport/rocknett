@@ -12,11 +12,34 @@ export const Route = createFileRoute("/about")({
     meta: [
       { title: "About Rocknet — Authorized Third-Party Internet Service Provider" },
       { name: "description", content: "Learn about Rocknet, an authorized third-party Internet Service Provider and ISA dealer offering high-speed cable internet, TV, and streaming services." },
+      { name: "keywords", content: "about Rocknet, third-party ISP, Internet Service Provider, ISA dealer, cable internet provider" },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "About Rocknet — Third-Party ISP" },
       { property: "og:description", content: "Authorized third-party Internet Service Provider offering high-speed internet and cable TV services nationwide." },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://rocknett.com/about" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://rocknett.com/about-team.jpg" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "About Rocknet — Authorized Third-Party ISP" },
+      { name: "twitter:description", content: "Learn about our mission to deliver reliable internet and cable services." },
+      { name: "twitter:image", content: "https://rocknett.com/about-team.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [
+      { rel: "canonical", href: "https://rocknett.com/about" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        textContent: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Rocknet",
+          "url": "https://rocknett.com",
+          "description": "Authorized third-party Internet Service Provider",
+          "image": "https://rocknett.com/logo.png"
+        }),
+      },
+    ],
   }),
   component: AboutPage,
 });
