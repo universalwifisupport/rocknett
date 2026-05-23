@@ -109,109 +109,98 @@ const faqs = [
 function HomePage() {
   return (
     <SiteLayout>
-      {/* ====== HERO BENTO ====== */}
-      <section className="relative pt-6">
+      {/* ====== HERO SECTION ====== */}
+      <section className="relative pt-20 sm:pt-28 lg:pt-32 pb-6 sm:pb-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-warm border border-border p-8 sm:p-14 lg:p-20">
-            <div className="grid lg:grid-cols-12 gap-4 lg:gap-5">
-            {/* Headline block */}
-            <div className="lg:col-span-8 bento bento-sand p-8 sm:p-12 lg:p-16 min-h-[460px] flex flex-col justify-between">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+            {/* Left content */}
+            <div className="flex flex-col justify-center">
               <Reveal>
                 <span className="eyebrow">Authorized ISA Dealer · Launched 2026</span>
               </Reveal>
               <Reveal delay={80}>
-                <h1 className="mt-6 font-display text-[2.5rem] sm:text-6xl lg:text-[5rem] font-extrabold text-ink leading-[0.98]">
+                <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-ink leading-[1.1]">
                   High-speed cable{" "}
-                  <span className="italic font-normal text-clay">internet,</span> TV &{" "}
-                  <span className="italic font-normal text-clay">streaming services</span> you can trust.
+                  <span className="italic font-normal text-clay">internet,</span>
+                  <br />
+                  TV &{" "}
+                  <span className="italic font-normal text-clay">streaming</span>
+                  <br />
+                  you can trust.
                 </h1>
               </Reveal>
-              <Reveal delay={180}>
-                <div className="mt-10 flex flex-wrap items-center gap-4">
-                  <a href="tel:xxx-xxx-xxxx" className="btn-primary">
+              <Reveal delay={120}>
+                <p className="mt-6 text-lg text-ink-muted leading-relaxed max-w-xl">
+                  Nationwide coverage, professional installation, and transparent pricing. No hidden fees, no pushy sales — just reliable connectivity and expert support.
+                </p>
+              </Reveal>
+              <Reveal delay={160}>
+                <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                  <a href="tel:xxx-xxx-xxxx" className="btn-primary w-full sm:w-auto justify-center">
                     <Phone className="h-4 w-4" /> Get a Quote Today
                   </a>
-                  <Link to="/contact" className="btn-ghost">
+                  <Link to="/contact" className="btn-ghost w-full sm:w-auto justify-center sm:justify-start">
                     Learn More <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
-                <p className="mt-4 text-xs text-ink-muted">Authorized third-party ISP · Nationwide coverage · Professional installation included.</p>
+              </Reveal>
+              <Reveal delay={200}>
+                <div className="mt-10 pt-10 border-t border-border flex flex-col sm:flex-row gap-8 sm:gap-12">
+                  <div>
+                    <div className="font-display font-extrabold text-3xl text-ink">100%</div>
+                    <p className="mt-2 text-sm text-ink-muted">Provider-neutral. No upsells.</p>
+                  </div>
+                  <div>
+                    <div className="font-display font-extrabold text-3xl text-ink">24/7</div>
+                    <p className="mt-2 text-sm text-ink-muted">Expert support always available.</p>
+                  </div>
+                  <div>
+                    <div className="font-display font-extrabold text-3xl text-ink">∞</div>
+                    <p className="mt-2 text-sm text-ink-muted">No hidden fees ever.</p>
+                  </div>
+                </div>
               </Reveal>
             </div>
 
-            {/* Phone block */}
-            <div className="lg:col-span-4 bento bento-ink p-0 min-h-[220px] lg:min-h-[460px] flex flex-col justify-between overflow-hidden relative">
-              <div className="absolute inset-0">
-                <img src={supportAgent} alt="Support team" width={600} height={800} className="h-full w-full object-cover opacity-30" />
-                <div className="absolute inset-0 bg-gradient-to-b from-ink/90 via-ink/80 to-ink/95" />
-              </div>
-              <div className="relative z-10 flex items-start justify-between p-8 sm:p-10">
-                <span className="text-[11px] tracking-[0.28em] uppercase text-primary-glow font-semibold">Service line</span>
-                <Compass className="h-5 w-5 text-white/40" />
-              </div>
-              <div className="relative z-10 p-8 sm:p-10">
-                <p className="text-white/60 text-sm">Call for a free quote</p>
-                <a href="tel:xxx-xxx-xxxx" className="block mt-2 font-display font-extrabold text-3xl sm:text-4xl text-white hover:text-primary-glow transition">
-                  xxx-xxx-xxxx
-                </a>
-                <p className="mt-4 text-sm text-white/70 leading-relaxed">
-                  Expert support · fast setup · transparent pricing.
-                </p>
-                <a href="tel:xxx-xxx-xxxx" className="mt-6 inline-flex items-center gap-2 text-primary-glow font-semibold text-sm">
-                  Call now <ArrowUpRight className="h-4 w-4" />
-                </a>
-              </div>
-            </div>
-
-            {/* Image block */}
-            <div className="lg:col-span-5 bento p-0 min-h-[280px] lg:min-h-[320px] overflow-hidden">
-              <div className="relative h-full">
-                <img src={heroFamily} alt="Family at home using the internet" width={1280} height={900} className="absolute inset-0 h-full w-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-3">
-                  <div>
-                    <div className="text-[10px] tracking-[0.24em] uppercase text-primary-glow font-bold">Quality services</div>
-                    <div className="font-display font-bold text-white text-lg leading-tight">Reliable internet that works.</div>
+            {/* Right visual */}
+            <div className="relative mt-10 lg:mt-0">
+              <Reveal>
+                <div className="relative rounded-3xl overflow-hidden">
+                  <img src={heroFamily} alt="Family enjoying reliable internet" width={600} height={700} className="w-full h-auto object-cover rounded-3xl shadow-elegant" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent rounded-3xl" />
+                  
+                  {/* Floating card - Support */}
+                  <div className="absolute bottom-6 left-4 right-4 sm:bottom-8 sm:left-6 sm:right-auto sm:w-64 rounded-2xl bg-white/95 backdrop-blur-md p-5 shadow-elegant">
+                    <div className="flex items-start gap-3">
+                      <div className="h-10 w-10 rounded-full bg-gradient-primary flex items-center justify-center shrink-0">
+                        <HeadphonesIcon className="h-5 w-5 text-white" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="font-semibold text-sm text-ink">Expert Support</div>
+                        <p className="text-xs text-ink-muted mt-1">Available 24/7 to help you out</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="glass-dark rounded-full p-2.5">
-                    <ArrowUpRight className="h-4 w-4 text-white" />
+
+                  {/* Floating badge - Trust */}
+                  <div className="absolute top-6 right-4 sm:top-8 sm:right-6 rounded-2xl bg-white/95 backdrop-blur-md px-4 py-3 shadow-elegant flex items-center gap-2">
+                    <BadgeCheck className="h-5 w-5 text-primary" />
+                    <span className="text-sm font-semibold text-ink">Privacy First</span>
                   </div>
                 </div>
-              </div>
+              </Reveal>
             </div>
-
-            {/* Stat block */}
-            <div className="lg:col-span-3 bento p-7 flex flex-col justify-between min-h-[280px] lg:min-h-[320px]">
-              <ShieldCheck className="h-7 w-7 text-primary" />
-              <div>
-                <div className="font-display font-extrabold text-5xl text-ink leading-none">100%</div>
-                <div className="mt-2 text-sm text-ink-muted leading-snug">Provider-neutral. We never push a specific brand or upsell a plan.</div>
-              </div>
-            </div>
-
-            {/* Trust mini block */}
-            <div className="lg:col-span-4 bento bento-accent p-7 flex flex-col justify-between min-h-[280px] lg:min-h-[320px]">
-              <div className="flex items-start justify-between text-white">
-                <Lock className="h-7 w-7" />
-                <span className="text-[10px] tracking-[0.28em] uppercase font-bold opacity-80">Privacy-first</span>
-              </div>
-              <div className="text-white">
-                <div className="font-display font-extrabold text-2xl leading-tight">Zero credential requests.</div>
-                <p className="mt-2 text-sm text-white/85 leading-relaxed">We never ask for provider passwords, PINs or banking details — not now, not ever.</p>
-              </div>
-            </div>
+          </div>
 
           {/* Disclosure ribbon */}
           <Reveal>
-            <div className="mt-5 rounded-2xl border border-primary/25 bg-card p-4 sm:p-5 flex items-start gap-3 shadow-soft">
+            <div className="mt-12 sm:mt-16 rounded-2xl border border-primary/25 bg-card p-4 sm:p-5 flex items-start gap-3 shadow-soft">
               <ShieldAlert className="h-5 w-5 text-primary mt-0.5 shrink-0" />
               <p className="text-xs sm:text-sm text-ink leading-relaxed">
                 <strong>Independent disclosure:</strong> Rocknet is an independent third-party service assistance startup, launched in 2026, and is not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider.
               </p>
             </div>
           </Reveal>
-            </div>
-          </div>
         </div>
       </section>
 
