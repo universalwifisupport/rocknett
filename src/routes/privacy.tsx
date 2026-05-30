@@ -57,7 +57,7 @@ function PrivacyPage() {
         <p>We may update this policy periodically. Material changes will be communicated by email and posted on this page with a new "last updated" date.</p>
 
         <h2>9. Contact</h2>
-        <p>Questions? Call <a href="tel:+18887254937">(888) 725-4937</a> or email <a href="mailto:privacy@rocknett.com">privacy@rocknett.com</a>.</p>
+        <p>Questions? Call <a href="tel:+18887174568">(888) 717-4568</a> or email <a href="mailto:privacy@rocknett.com">privacy@rocknett.com</a>.</p>
       </LegalContent>
     </SiteLayout>
   );
