@@ -8,8 +8,8 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Rocknet — Call (888) 717-4568" },
-      { name: "description", content: "Get in touch with Rocknet. Send a message, request a callback, or call (888) 717-4568 for service inquiries." },
+      { title: "Contact Rocknet — Call (888) 398-0832" },
+      { name: "description", content: "Get in touch with Rocknet. Send a message, request a callback, or call (888) 398-0832 for service inquiries." },
       { name: "keywords", content: "contact Rocknet, customer service, support, callback, internet support" },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Contact Rocknet" },
@@ -34,7 +34,7 @@ export const Route = createFileRoute("/contact")({
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Customer Service",
-            "telephone": "+18887174568",
+            "telephone": "+18883980832",
             "email": "support@rocknett.com"
           }
         }),
@@ -68,13 +68,13 @@ function ContactPage() {
                   <Phone className="h-5 w-5 text-white" />
                 </div>
                 <div className="mt-6 text-[11px] tracking-[0.24em] uppercase text-primary-glow font-bold">Independent advisor line</div>
-                <a href="tel:+18887174568" className="block mt-2 font-display font-extrabold text-4xl sm:text-5xl text-white hover:text-primary-glow transition">
-                  (888) 717-4568
+                <a href="tel:+18883980832" className="block mt-2 font-display font-extrabold text-4xl sm:text-5xl text-white hover:text-primary-glow transition">
+                  (888) 398-0832
                 </a>
                 <p className="mt-4 text-white/70 text-sm leading-relaxed max-w-sm">
                   Real humans · plain-English guidance · no provider passwords ever requested.
                 </p>
-                <a href="tel:+18887174568" className="mt-7 inline-flex items-center gap-2 rounded-full bg-white text-ink px-6 py-3 font-semibold hover:bg-primary-glow transition">
+                <a href="tel:+18883980832" className="mt-7 inline-flex items-center gap-2 rounded-full bg-white text-ink px-6 py-3 font-semibold hover:bg-primary-glow transition">
                   Call now <Phone className="h-4 w-4 text-primary" />
                 </a>
               </div>
@@ -86,7 +86,7 @@ function ContactPage() {
             {[
               { icon: Mail, t: "Email", v: "support@rocknett.com", href: "mailto:support@rocknett.com", sub: "Reply within 2 business hours" },
               { icon: Clock, t: "Hours", v: "Mon–Sat · 8a–8p", sub: "Customer support team" },
-              { icon: Phone, t: "Phone", v: "(888) 717-4568", href: "tel:+18887174568", sub: "Call anytime during hours" },
+              { icon: Phone, t: "Phone", v: "(888) 398-0832", href: "tel:+18883980832", sub: "Call anytime during hours" },
               { icon: ShieldCheck, t: "Promise", v: "Transparent & fair", sub: "All fees disclosed upfront" },
             ].map((c, i) => (
               <Reveal key={c.t} delay={i * 80}>
@@ -151,7 +151,7 @@ function ContactPage() {
                 </div>
                 <h3 className="mt-5 font-display text-xl font-extrabold text-ink">Need to talk now?</h3>
                 <p className="mt-2 text-sm text-ink-muted">Skip the form — call our independent advisor line and talk to a real human.</p>
-                <a href="tel:+18887174568" className="mt-5 btn-primary w-full"><Phone className="h-4 w-4" /> (888) 717-4568</a>
+                <a href="tel:+18883980832" className="mt-5 btn-primary w-full"><Phone className="h-4 w-4" /> (888) 398-0832</a>
               </div>
             </Reveal>
           </div>

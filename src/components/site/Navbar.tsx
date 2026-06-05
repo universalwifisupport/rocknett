@@ -80,13 +80,13 @@ export function Navbar() {
 
             <div className="hidden md:flex items-center gap-2">
               <a
-                href="tel:+18887174568"
+                href="tel:+18883980832"
                 className="hidden xl:inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold text-ink hover:bg-sand transition"
               >
-                <Phone className="h-3.5 w-3.5 text-primary" /> (888) 717-4568
+                <Phone className="h-3.5 w-3.5 text-primary" /> (888) 398-0832
               </a>
               <a
-                href="tel:+18887174568"
+                href="tel:+18883980832"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-soft hover:shadow-glow hover:-translate-y-0.5 transition-all"
               >
                 Get Assistance <ChevronRight className="h-4 w-4" />
@@ -114,7 +114,7 @@ export function Navbar() {
                   </li>
                 ))}
               </ul>
-              <a href="tel:+18887174568" className="mt-2 flex items-center justify-center gap-2 rounded-full bg-gradient-primary px-5 py-3 font-semibold text-primary-foreground">
+              <a href="tel:+18883980832" className="mt-2 flex items-center justify-center gap-2 rounded-full bg-gradient-primary px-5 py-3 font-semibold text-primary-foreground">
                 <Phone className="h-4 w-4" /> Speak With Support
               </a>
             </div>

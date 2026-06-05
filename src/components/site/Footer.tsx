@@ -21,8 +21,8 @@ export function Footer() {
               <p className="mt-6 max-w-md text-white/70 leading-relaxed">
                 An independent third-party assistance platform offering informational guidance on internet, Wi-Fi and cable TV service questions.
               </p>
-              <a href="tel:+18887174568" className="mt-8 inline-flex items-center gap-3 rounded-full bg-white text-ink px-6 py-3 font-semibold hover:bg-primary-glow transition">
-                <Phone className="h-4 w-4 text-primary" /> (888) 717-4568
+              <a href="tel:+18883980832" className="mt-8 inline-flex items-center gap-3 rounded-full bg-white text-ink px-6 py-3 font-semibold hover:bg-primary-glow transition">
+                <Phone className="h-4 w-4 text-primary" /> (888) 398-0832
                 <ArrowUpRight className="h-4 w-4" />
               </a>
               <div className="flex gap-3 mt-8">
@@ -64,7 +64,7 @@ export function Footer() {
                 <ul className="space-y-4 text-sm">
                   <li className="flex items-start gap-3 text-white/75">
                     <Phone className="h-4 w-4 mt-1 text-primary-glow shrink-0" />
-                    <a href="tel:+18887174568" className="hover:text-white">(888) 717-4568</a>
+                    <a href="tel:+18883980832" className="hover:text-white">(888) 398-0832</a>
                   </li>
                   <li className="flex items-start gap-3 text-white/75">
                     <Mail className="h-4 w-4 mt-1 text-primary-glow shrink-0" />

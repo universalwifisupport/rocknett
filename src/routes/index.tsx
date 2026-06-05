@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Rocknet — High-Speed Cable Internet & Services" },
-      { name: "description", content: "Get reliable high-speed cable internet, TV, and streaming services from Rocknet, an authorized third-party ISP dealer. Professional installation, 24/7 support, nationwide coverage. Call (888) 717-4568." },
+      { name: "description", content: "Get reliable high-speed cable internet, TV, and streaming services from Rocknet, an authorized third-party ISP dealer. Professional installation, 24/7 support, nationwide coverage. Call (888) 398-0832." },
       { name: "keywords", content: "cable internet, high-speed internet, ISP, streaming services, cable TV, Wi-Fi installation" },
       { name: "robots", content: "index, follow" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -50,7 +50,7 @@ export const Route = createFileRoute("/")({
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Customer Service",
-            "telephone": "+18887174568",
+            "telephone": "+18883980832",
             "email": "support@rocknett.com"
           }
         }),
@@ -136,7 +136,7 @@ function HomePage() {
               </Reveal>
               <Reveal delay={160}>
                 <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                  <a href="tel:+18887174568" className="btn-primary w-full sm:w-auto justify-center">
+                  <a href="tel:+18883980832" className="btn-primary w-full sm:w-auto justify-center">
                     <Phone className="h-4 w-4" /> Get a Quote Today
                   </a>
                   <Link to="/contact" className="btn-ghost w-full sm:w-auto justify-center sm:justify-start">
@@ -337,7 +337,7 @@ function HomePage() {
               <p className="mt-5 text-ink-muted leading-relaxed">
                 The whole journey, from the first call to applying the guidance with your own chosen provider.
               </p>
-              <a href="tel:+18887174568" className="mt-7 btn-primary inline-flex">
+              <a href="tel:+18883980832" className="mt-7 btn-primary inline-flex">
                 <Phone className="h-4 w-4" /> Start the conversation
               </a>
             </Reveal>
@@ -503,7 +503,7 @@ function HomePage() {
                 <p className="mt-5 text-ink-muted leading-relaxed">
                   Common questions about who we are, what we do, and the boundaries we keep as an independent third-party platform.
                 </p>
-                <a href="tel:+18887174568" className="mt-7 inline-flex items-center gap-2 rounded-full bg-ink text-white px-5 py-3 font-semibold hover:bg-primary transition">
+                <a href="tel:+18883980832" className="mt-7 inline-flex items-center gap-2 rounded-full bg-ink text-white px-5 py-3 font-semibold hover:bg-primary transition">
                   <HelpCircle className="h-4 w-4" /> Still have a question?
                 </a>
               </div>
@@ -535,7 +535,7 @@ function HomePage() {
                   Friendly, vendor-neutral guidance on internet, Wi-Fi and cable TV topics. No account access, no provider passwords, no pressure.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <a href="tel:+18887174568" className="inline-flex items-center gap-2 rounded-full bg-white text-ink px-7 py-3.5 font-semibold hover:bg-primary-glow transition">
+                  <a href="tel:+18883980832" className="inline-flex items-center gap-2 rounded-full bg-white text-ink px-7 py-3.5 font-semibold hover:bg-primary-glow transition">
                     <Phone className="h-4 w-4" /> Call for Guidance
                   </a>
                   <Link to="/contact" className="inline-flex items-center gap-2 rounded-full glass-dark text-white px-7 py-3.5 font-semibold hover:bg-white/15 transition">

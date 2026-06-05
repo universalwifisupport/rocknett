@@ -187,7 +187,7 @@ function AboutPage() {
                   </div>
                 ))}
               </div>
-              <a href="tel:+18887174568" className="mt-8 btn-primary inline-flex">
+              <a href="tel:+18883980832" className="mt-8 btn-primary inline-flex">
                 <Phone className="h-4 w-4" /> Talk to a real human
               </a>
             </div>
@@ -218,8 +218,8 @@ function AboutPage() {
               <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-white text-ink px-7 py-3.5 font-semibold hover:bg-ink hover:text-white transition">
                 Request Help
               </Link>
-              <a href="tel:+18887174568" className="inline-flex items-center gap-2 rounded-full glass-dark text-white px-7 py-3.5 font-semibold">
-                <Phone className="h-4 w-4" /> (888) 717-4568
+              <a href="tel:+18883980832" className="inline-flex items-center gap-2 rounded-full glass-dark text-white px-7 py-3.5 font-semibold">
+                <Phone className="h-4 w-4" /> (888) 398-0832
               </a>
             </div>
           </div>

@@ -15,7 +15,7 @@ export const generateOrganizationSchema = () => ({
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "Customer Service",
-    "telephone": "+18887174568",
+    "telephone": "+18883980832",
     "email": "support@rocknett.com"
   }
 });
@@ -27,7 +27,7 @@ export const generateLocalBusinessSchema = () => ({
   "image": "https://rocknett.com/logo.png",
   "description": "Authorized third-party Internet Service Provider",
   "url": "https://rocknett.com",
-  "telephone": "+18887174568",
+  "telephone": "+18883980832",
   "email": "support@rocknett.com",
   "areaServed": "US",
   "availableLanguage": ["en"],
