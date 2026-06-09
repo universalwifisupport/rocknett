@@ -63,7 +63,7 @@ function TermsPage() {
         <p>These terms are governed by the laws of the State of Colorado, without regard to its conflict-of-laws principles.</p>
 
         <h2>11. Contact</h2>
-        <p>For questions about these terms, call <a href="tel:+18883980832">(888) 398-0832</a> or email <a href="mailto:legal@rocknett.com">legal@rocknett.com</a>.</p>
+        <p>For questions about these terms, call <a href="tel:+18884788407">(888) 478-8407</a> or email <a href="mailto:legal@rocknett.com">legal@rocknett.com</a>.</p>
       </LegalContent>
     </SiteLayout>
   );
